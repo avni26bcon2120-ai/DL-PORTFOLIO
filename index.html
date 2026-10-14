@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Avni Bindal - First-Year B.Tech Computer Science Engineering student at JECRC University, Jaipur. Explore projects, skills, and coursework.">
+  <meta name="author" content="Avni Bindal">
+  <title>Avni Bindal | B.Tech CSE Portfolio</title>
+
+  <!-- Google Fonts: Playfair Display (editorial headings) & Plus Jakarta Sans (clean modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Avni Bindal Home">
+        <span class="logo-mark">A</span>
+        <span class="logo-text">Avni<span class="logo-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Download Portfolio Button -->
+        <button id="downloadBtn" class="btn btn-outline btn-sm download-btn" aria-label="Download portfolio summary">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Summary</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- 1. HOME / HERO SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal">
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>First-Year B.Tech CSE Student • JECRC University</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Avni</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            A curious Computer Science Engineering student passionate about technology, creative design, and building fresh skills one line of code at a time.
+          </p>
+
+          <p class="hero-description">
+            Welcome to my personal digital space! Here I share my academic foundations, beginner development projects, hackathon explorations, and my journey in tech.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+            <button class="btn btn-ghost download-hero-btn" onclick="openDownloadModal()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Summary</span>
+            </button>
+          </div>
+
+          <div class="hero-quick-tags">
+            <span class="tag">🌱 Learning C &amp; Web</span>
+            <span class="tag">💡 Hackathon Enthusiast</span>
+            <span class="tag">🎨 Aesthetic UI</span>
+            <span class="tag">📍 Jaipur, India</span>
+          </div>
+        </div>
+
+        <!-- Pinterest Aesthetic Mood Card -->
+        <div class="hero-visual reveal">
+          <div class="mood-card">
+            <div class="mood-card-header">
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Open to learning &amp; peer projects</span>
+              </div>
+              <span class="mood-date">Batch 2024–28</span>
+            </div>
+
+            <div class="avatar-showcase">
+              <div class="avatar-ring">
+                <div class="avatar-placeholder">
+                  <span class="avatar-initials">AB</span>
+                </div>
+              </div>
+              <div class="avatar-meta">
+                <h2 class="avatar-name">Avni Bindal</h2>
+                <p class="avatar-role">B.Tech Computer Science Engineering</p>
+                <p class="avatar-sub">JECRC University, Jaipur</p>
+              </div>
+            </div>
+
+            <div class="mood-divider"></div>
+
+            <div class="mood-grid">
+              <div class="mood-item">
+                <span class="mood-icon">💻</span>
+                <div>
+                  <h4>Coding Focus</h4>
+                  <p>C Logic &amp; Frontend Basics</p>
+                </div>
+              </div>
+              <div class="mood-item">
+                <span class="mood-icon">🚀</span>
+                <div>
+                  <h4>Recent Experience</h4>
+                  <p>Student Hackathon Team</p>
+                </div>
+              </div>
+              <div class="mood-item">
+                <span class="mood-icon">🤝</span>
+                <div>
+                  <h4>Values</h4>
+                  <p>Teamwork &amp; Curiosity</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mood-quote">
+              <span class="quote-mark">“</span>
+              <p>Every expert was once a beginner. Taking small, curious steps every day.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">A snapshot of where I am currently in my engineering journey.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Main Narrative Card -->
+          <div class="about-card about-story reveal">
+            <div class="card-icon-badge">✨</div>
+            <h3>Hello! I'm Avni</h3>
+            <p>
+              I am a first-year <strong>B.Tech Computer Science Engineering</strong> student at <strong>JECRC University, Jaipur</strong>.
+            </p>
+            <p>
+              Starting my college journey has opened up an exciting world of algorithms, problem solving, and design. As a first-year student, I am focused on understanding the fundamentals of how computer systems work, sharpening my analytical logic through C programming, and exploring modern web development.
+            </p>
+            <p>
+              Beyond textbooks and lectures, I enjoy the intersection of technology and creativity. Whether it is collaborating in a student hackathon or styling a clean webpage, I love the feeling of bringing ideas to life through thoughtful code.
+            </p>
+            <div class="story-chips">
+              <span class="chip">🎯 First-Year Undergrad</span>
+              <span class="chip">🏫 JECRC University</span>
+              <span class="chip">💡 Growth Mindset</span>
+              <span class="chip">🤝 Team Contributor</span>
+            </div>
+          </div>
+
+          <!-- Academic Journey Bento -->
+          <div class="about-card bento-card reveal">
+            <div class="card-icon-badge">🎓</div>
+            <h3>Undergraduate Journey</h3>
+            <div class="timeline-entry">
+              <div class="timeline-bullet"></div>
+              <div class="timeline-content">
+                <span class="timeline-badge">1st Year Undergrad</span>
+                <h4>B.Tech in Computer Science</h4>
+                <p class="uni-name">JECRC University, Jaipur</p>
+                <p class="edu-note">Exploring computing foundations, logic, and collaborative technology initiatives from day one.</p>
+                <a href="#education" class="edu-jump-link">
+                  <span>Explore full education &amp; semester curriculum</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- How I Learn Bento -->
+          <div class="about-card bento-card reveal">
+            <div class="card-icon-badge">🧠</div>
+            <h3>My Learning Approach</h3>
+            <ul class="learning-points">
+              <li>
+                <strong>Concept First:</strong> Grasping the foundational logic before jumping straight to coding.
+              </li>
+              <li>
+                <strong>Hands-On Practice:</strong> Writing code, compiling programs, and learning from terminal errors.
+              </li>
+              <li>
+                <strong>Collaboration:</strong> Brainstorming with batchmates, participating in hackathons, and learning from feedback.
+              </li>
+              <li>
+                <strong>Clean Presentation:</strong> Believing that software should not just work, but also be intuitive and thoughtfully designed.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Personal Interests Bento -->
+          <div class="about-card bento-card reveal">
+            <div class="card-icon-badge">🌿</div>
+            <h3>Interests &amp; Hobbies</h3>
+            <div class="interest-tags">
+              <span class="interest-pill">🖥️ Web Design &amp; Layouts</span>
+              <span class="interest-pill">🧩 Logic Puzzles</span>
+              <span class="interest-pill">📚 Tech Reading</span>
+              <span class="interest-pill">👥 Peer Hackathons</span>
+              <span class="interest-pill">🎨 Minimalist Aesthetics</span>
+              <span class="interest-pill">✍️ Creative Notes &amp; Planning</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 3. DEDICATED EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Profile</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">
+            Formal engineering degree, branch specialization, university details, and current semester curriculum.
+          </p>
+        </div>
+
+        <div class="education-grid">
+
+          <!-- Card 1: Primary Degree & University Card -->
+          <div class="edu-card edu-primary-card reveal">
+            <div class="edu-card-top">
+              <div class="edu-icon-badge">🎓</div>
+              <span class="edu-status-pill">Active Undergraduate • Sem 1</span>
+            </div>
+
+            <div class="edu-main-info">
+              <span class="edu-field-label">Current Degree</span>
+              <h3 class="edu-degree-title">Bachelor of Technology (B.Tech)</h3>
+              
+              <span class="edu-field-label">Branch &amp; Specialization</span>
+              <p class="edu-branch-title">Computer Science &amp; Engineering (CSE)</p>
+
+              <div class="edu-university-block">
+                <div class="edu-uni-icon">🏛️</div>
+                <div class="edu-uni-meta">
+                  <h4 class="edu-university-name">JECRC University</h4>
+                  <p class="edu-university-location">Jaipur, Rajasthan, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-meta-grid">
+              <div class="edu-meta-item">
+                <span class="meta-label">Current Semester</span>
+                <span class="meta-value">Semester 1 (1st Year)</span>
+              </div>
+              <div class="edu-meta-item">
+                <span class="meta-label">Academic Duration</span>
+                <span class="meta-value">2024 – 2028</span>
+              </div>
+              <div class="edu-meta-item">
+                <span class="meta-label">Program Type</span>
+                <span class="meta-value">4-Year Full-Time</span>
+              </div>
+              <div class="edu-meta-item">
+                <span class="meta-label">Department</span>
+                <span class="meta-value">School of Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Semester 1 Coursework Highlights -->
+          <div class="edu-card edu-curriculum-card reveal">
+            <div class="edu-card-top">
+              <div class="edu-icon-badge">📚</div>
+              <span class="edu-status-pill subtle">Current Curriculum</span>
+            </div>
+
+            <h3 class="edu-card-subtitle">Semester 1 Coursework Focus</h3>
+            <p class="edu-desc-text">
+              Key foundational subjects and practical labs being studied during the first semester:
+            </p>
+
+            <ul class="coursework-list">
+              <li>
+                <div class="course-bullet">💻</div>
+                <div>
+                  <strong>Problem Solving with C:</strong>
+                  <span>Algorithm design, syntax fundamentals, conditionals, loops, functions, and arrays.</span>
+                </div>
+              </li>
+              <li>
+                <div class="course-bullet">📑</div>
+                <div>
+                  <strong>Digital Literacy &amp; Web Presentation:</strong>
+                  <span>Modern developer tools, semantic web building, documentation, and technical presenting.</span>
+                </div>
+              </li>
+              <li>
+                <div class="course-bullet">📐</div>
+                <div>
+                  <strong>Engineering Mathematics:</strong>
+                  <span>Analytical calculus, matrices, and discrete foundations for algorithmic logic.</span>
+                </div>
+              </li>
+              <li>
+                <div class="course-bullet">🔬</div>
+                <div>
+                  <strong>Computing Labs:</strong>
+                  <span>Command-line compilation using GCC, terminal debugging, and structured lab experiments.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Academic Environment & Campus Experience -->
+          <div class="edu-card edu-campus-card reveal">
+            <div class="edu-card-top">
+              <div class="edu-icon-badge">💡</div>
+              <span class="edu-status-pill subtle">Campus Experience</span>
+            </div>
+
+            <h3 class="edu-card-subtitle">JECRC University Environment</h3>
+            <p class="edu-desc-text">
+              Engaging with peers and faculty to build practical exposure alongside classroom instruction:
+            </p>
+
+            <div class="campus-highlights">
+              <div class="campus-item">
+                <span class="campus-icon">🖥️</span>
+                <div>
+                  <h4>State-of-the-Art Labs</h4>
+                  <p>Regular lab sessions for programming problem sets and hands-on coding tests.</p>
+                </div>
+              </div>
+
+              <div class="campus-item">
+                <span class="campus-icon">🤝</span>
+                <div>
+                  <h4>Student Tech Communities</h4>
+                  <p>Participating in campus hackathon teams, peer discussions, and tech events.</p>
+                </div>
+              </div>
+
+              <div class="campus-item">
+                <span class="campus-icon">🎯</span>
+                <div>
+                  <h4>Engineering Foundations</h4>
+                  <p>Cultivating discipline, code hygiene, and analytical thinking from the very first semester.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 3. SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Current Capabilities</span>
+          <h2 class="section-title">Skills &amp; Learning Toolkit</h2>
+          <p class="section-desc">
+            Honest, beginner-level skills reflecting my first-year coursework and independent exploration. No inflated claims — just steady, committed learning.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+
+          <!-- Category 1: Programming & Core -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="cat-icon">⚙️</div>
+              <div>
+                <h3 class="cat-title">Core Programming</h3>
+                <span class="cat-level">Foundational Academic Level</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C Programming</span>
+                  <span class="skill-pill beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">Variables, conditions, loops, arrays, functions, and standard I/O logic.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 55%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Algorithmic Problem Solving</span>
+                  <span class="skill-pill beginner">Foundational</span>
+                </div>
+                <p class="skill-detail">Flowcharts, pseudocode, tracing logic, and modular code thinking.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 50%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Fundamentals -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="cat-icon">🌐</div>
+              <div>
+                <h3 class="cat-title">Web Development</h3>
+                <span class="cat-level">Beginner &amp; Exploring</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-pill progressing">Good Basics</span>
+                </div>
+                <p class="skill-detail">Semantic structure, accessible markup, forms, tables, and document layout.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 70%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-pill progressing">Good Basics</span>
+                </div>
+                <p class="skill-detail">Flexbox, CSS Grid, media queries, CSS variables, and clean styling.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 65%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-pill beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">DOM manipulation, event listeners, basic functions, and UI state toggling.</p>
+                <div class="progress-bar-bg">
+                  <div class="progress-bar-fill" style="width: 45%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Developer Tools -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="cat-icon">🛠️</div>
+              <div>
+                <h3 class="cat-title">Tools &amp; Workflow</h3>
+                <span class="cat-level">Getting Familiar</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-pill progressing">Daily Driver</span>
+                </div>
+                <p class="skill-detail">Local development environment, code editing, and extension setup.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">GCC &amp; Command Line</span>
+                  <span class="skill-pill beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">Compiling C programs in the terminal and running basic shell commands.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git &amp; Version Control</span>
+                  <span class="skill-pill beginner">Learning Basics</span>
+                </div>
+                <p class="skill-detail">Understanding commits, repositories, and local version management.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills -->
+          <div class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="cat-icon">🤝</div>
+              <div>
+                <h3 class="cat-title">Interpersonal &amp; Professional</h3>
+                <span class="cat-level">Valuable Strengths</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Teamwork &amp; Collaboration</span>
+                  <span class="skill-pill active-pill">Active</span>
+                </div>
+                <p class="skill-detail">Effective group contributor in hackathon teams and student group assignments.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Clear Communication</span>
+                  <span class="skill-pill active-pill">Active</span>
+                </div>
+                <p class="skill-detail">Expressing technical ideas clearly and creating structured presentations.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Adaptability &amp; Curiosity</span>
+                  <span class="skill-pill active-pill">Active</span>
+                </div>
+                <p class="skill-detail">Eagerness to explore unfamiliar topics, take constructive feedback, and iterate.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills-disclaimer reveal">
+          <span class="info-icon">ℹ️</span>
+          <span><strong>Note on proficiency:</strong> As a first-year student, my ratings represent my comfort level with beginner concepts. I believe in honest assessment and gradual, sustained growth.</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Hands-On Work</span>
+          <h2 class="section-title">Student Projects</h2>
+          <p class="section-desc">
+            Classroom coursework and student hackathon prototypes created during my first year.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Academic Portfolio Website -->
+          <article class="project-card reveal">
+            <div class="project-banner project-banner-portfolio">
+              <div class="project-type-badge">
+                <span class="badge-dot"></span>
+                <span>Academic Coursework Project</span>
+              </div>
+              <div class="project-icon-art">💻🎨</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-semester">1st Year • Digital Literacy &amp; Web</span>
+                <h3 class="project-title">Personal Academic Portfolio</h3>
+              </div>
+
+              <p class="project-description">
+                A clean, modern, Pinterest-inspired responsive personal portfolio designed to document my coursework, programming milestones, and university learning. Built completely with vanilla web technologies.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <strong>Key Highlights:</strong>
+                  <ul>
+                    <li>Semantic HTML5 structure and custom CSS styling.</li>
+                    <li>Responsive grid layout with light and dark theme switcher.</li>
+                    <li>Downloadable summary feature and printable layout.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-footer">
+                <span class="project-status-label status-completed">
+                  <span class="status-circle"></span> Completed &amp; Active
+                </span>
+                <a href="#home" class="project-action-link" title="You are currently viewing this project!">
+                  <span>Current Site</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Project 2: Real-Time Airfare Price Index (Hackathon) -->
+          <article class="project-card reveal">
+            <div class="project-banner project-banner-airfare">
+              <div class="project-type-badge hackathon-badge">
+                <span class="badge-dot"></span>
+                <span>Student Hackathon Project</span>
+              </div>
+              <div class="project-icon-art">✈️📊</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-semester">Hackathon Prototype • Team Project</span>
+                <h3 class="project-title">Real-Time Airfare Price Index</h3>
+              </div>
+
+              <p class="project-description">
+                Conceived and built during a student hackathon, this project explores how flight ticket prices fluctuate over time. The goal was to provide an index indicator that helps budget-conscious students and travelers spot optimal booking windows.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <strong>My Contributions &amp; Learnings:</strong>
+                  <ul>
+                    <li>Collaborated in a multidisciplinary student team under hackathon time limits.</li>
+                    <li>Contributed to problem framing, presentation slides, and user dashboard layout concept.</li>
+                    <li>Researched price index metrics and learned how real-time data informs software decisions.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Hackathon Prototype</span>
+                <span class="tech-tag">Data Concepts</span>
+                <span class="tech-tag">UI Wireframing</span>
+                <span class="tech-tag">Team Collaboration</span>
+              </div>
+
+              <div class="project-footer">
+                <span class="project-status-label status-prototype">
+                  <span class="status-circle"></span> Hackathon Prototype
+                </span>
+                <span class="project-note-badge" title="Academic showcase project">
+                  Student Team Concept
+                </span>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Project 3: Upcoming Semester Project Card (Editable Placeholder) -->
+          <article class="project-card project-card-upcoming reveal">
+            <div class="project-banner project-banner-upcoming">
+              <div class="project-type-badge upcoming-badge">
+                <span class="badge-dot"></span>
+                <span>Upcoming Coursework</span>
+              </div>
+              <div class="project-icon-art">🧩💡</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-header">
+                <span class="project-semester">Semester 2 • Planned</span>
+                <h3 class="project-title">C Data Structures Mini-Project</h3>
+              </div>
+
+              <p class="project-description">
+                <em>[Editable Placeholder]</em> An upcoming academic mini-project planned for my upcoming semester to implement student record management or practical data structures (linked lists, stacks) using C.
+              </p>
+
+              <div class="project-highlights">
+                <div class="highlight-item">
+                  <strong>Planned Scope:</strong>
+                  <ul>
+                    <li>Console-based interactive menu and file handling in C.</li>
+                    <li>Modular functions for adding, searching, and sorting records.</li>
+                    <li>Clean terminal output and robust input validation.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">C Language</span>
+                <span class="tech-tag">Data Structures</span>
+                <span class="tech-tag">File Handling</span>
+              </div>
+
+              <div class="project-footer">
+                <span class="project-status-label status-planned">
+                  <span class="status-circle"></span> In Planning Phase
+                </span>
+                <span class="editable-flag" title="Feel free to update this card with your next project!">
+                  ✎ Editable Slot
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 5. ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Milestones &amp; Growth</span>
+          <h2 class="section-title">Achievements &amp; Activities</h2>
+          <p class="section-desc">
+            Early college milestones, hackathon participation, and learning pursuits.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Achievement 1: Hackathon Participation -->
+          <div class="achievement-card reveal">
+            <div class="achievement-top">
+              <div class="achievement-icon">🏆</div>
+              <span class="achievement-badge">Hackathon</span>
+            </div>
+            <h3 class="achievement-title">Student Hackathon Participation</h3>
+            <p class="achievement-event">
+              <strong>Event:</strong> [Editable Placeholder: e.g., JECRC University Hackathon / Regional Student Hackathon 2024]
+            </p>
+            <p class="achievement-desc">
+              Participated as an enthusiastic first-year team member, pitching and building the <strong>Real-Time Airfare Price Index</strong> project. Gained invaluable experience in fast-paced collaboration, brainstorming under constraints, and presenting technical ideas to peers and mentors.
+            </p>
+            <div class="achievement-meta">
+              <span class="meta-tag">Team Contributor</span>
+              <span class="meta-tag">Ideation &amp; Prototype</span>
+            </div>
+          </div>
+
+          <!-- Achievement 2: Coursework & Programming Milestones -->
+          <div class="achievement-card reveal">
+            <div class="achievement-top">
+              <div class="achievement-icon">📚</div>
+              <span class="achievement-badge">Academic</span>
+            </div>
+            <h3 class="achievement-title">C Programming Coursework Milestone</h3>
+            <p class="achievement-event">
+              <strong>Institution:</strong> JECRC University, Jaipur
+            </p>
+            <p class="achievement-desc">
+              Successfully wrote, compiled, and debugged first-year laboratory programs in C programming, demonstrating solid grasp of conditionals, loop control structures, 1D/2D arrays, and functions.
+            </p>
+            <div class="achievement-meta">
+              <span class="meta-tag">First-Year Milestone</span>
+              <span class="meta-tag">Problem Solving</span>
+            </div>
+          </div>
+
+          <!-- Achievement 3: Digital Literacy Portfolio Presentation -->
+          <div class="achievement-card reveal">
+            <div class="achievement-top">
+              <div class="achievement-icon">🎯</div>
+              <span class="achievement-badge">Coursework</span>
+            </div>
+            <h3 class="achievement-title">Digital Literacy Presentation</h3>
+            <p class="achievement-event">
+              <strong>Module:</strong> Digital Literacy Coursework Showcase
+            </p>
+            <p class="achievement-desc">
+              Designed and presented academic coursework on digital literacy, structured technical documentation, and web presentation skills, highlighting the importance of clear communication in engineering.
+            </p>
+            <div class="achievement-meta">
+              <span class="meta-tag">Presentation</span>
+              <span class="meta-tag">Digital Skills</span>
+            </div>
+          </div>
+
+          <!-- Achievement 4: Editable Future Goal / Certificate Placeholder -->
+          <div class="achievement-card editable-card reveal">
+            <div class="achievement-top">
+              <div class="achievement-icon">🌟</div>
+              <span class="achievement-badge placeholder-badge">Editable Placeholder</span>
+            </div>
+            <h3 class="achievement-title">[Add Your Next Certification / Club Activity]</h3>
+            <p class="achievement-event">
+              <strong>Organizer / Platform:</strong> [e.g., HackerRank / Coursera / College Technical Club]
+            </p>
+            <p class="achievement-desc">
+              <em>[Placeholder text: Update this space when you earn a coding certificate, join a college technical society like ACM/IEEE, or win a departmental competition.]</em>
+            </p>
+            <div class="achievement-meta">
+              <span class="meta-tag">✎ Ready for your update</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="edit-hint-banner reveal">
+          <span class="hint-icon">✏️</span>
+          <span><strong>Quick Customization Tip:</strong> Open <code>index.html</code> in your editor to replace bracketed text like <code>[Insert Hackathon Name]</code> with your exact certificates and event dates as you achieve them!</span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 7. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-tag">Say Hello</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">
+            Feel free to reach out for student collaborations, peer projects, or simply to connect!
+          </p>
+        </div>
+
+        <!-- Contact Status Advisory Banner -->
+        <div class="contact-placeholder-alert reveal">
+          <div class="alert-icon">✨</div>
+          <div class="alert-body">
+            <strong>Contact Profiles Connected</strong>
+            <p>
+              GitHub and LinkedIn profiles have been verified and connected below. The email address remains an editable placeholder until verified.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-wrapper">
+
+          <!-- Left Info Cards -->
+          <div class="contact-info-col reveal">
+            
+            <!-- Email (Editable Placeholder) -->
+            <div class="contact-card contact-card-placeholder">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                <div class="contact-label-row">
+                  <h4>Email Address</h4>
+                  <span class="placeholder-badge">Editable Placeholder</span>
+                </div>
+                <p class="contact-value placeholder-value" id="emailPlaceholderText">your.email@example.com</p>
+                <span class="contact-subtext">✏️ Replace in index.html with your verified email</span>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" aria-label="Copy email placeholder" title="Copy email address">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <!-- LinkedIn (Verified Profile) -->
+            <div class="contact-card">
+              <div class="contact-icon">💼</div>
+              <div class="contact-details">
+                <div class="contact-label-row">
+                  <h4>LinkedIn Profile</h4>
+                  <span class="verified-badge">Verified Profile</span>
+                </div>
+                <p class="contact-value" id="linkedinProfileText">https://www.linkedin.com/in/avni-bindal-81b0b8428</p>
+                <span class="contact-subtext">Verified professional profile • Connect with me</span>
+              </div>
+              <a id="linkedinButton" href="https://www.linkedin.com/in/avni-bindal-81b0b8428" target="_blank" rel="noopener noreferrer" class="external-link-btn" title="Open LinkedIn Profile in new tab" aria-label="Open LinkedIn Profile in new tab">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- GitHub (Verified Profile) -->
+            <div class="contact-card">
+              <div class="contact-icon">🐙</div>
+              <div class="contact-details">
+                <div class="contact-label-row">
+                  <h4>GitHub Profile</h4>
+                  <span class="verified-badge">Verified Profile</span>
+                </div>
+                <p class="contact-value" id="githubProfileText">https://github.com/avni26bcon2120-ai</p>
+                <span class="contact-subtext">Verified code repository &amp; student projects</span>
+              </div>
+              <a id="githubButton" href="https://github.com/avni26bcon2120-ai" target="_blank" rel="noopener noreferrer" class="external-link-btn" title="Open GitHub Profile in new tab" aria-label="Open GitHub Profile in new tab">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <!-- University Campus Location -->
+            <div class="contact-card">
+              <div class="contact-icon">🏫</div>
+              <div class="contact-details">
+                <div class="contact-label-row">
+                  <h4>University Campus</h4>
+                  <span class="campus-badge">JECRC University</span>
+                </div>
+                <p class="contact-value">JECRC University Campus</p>
+                <span class="contact-subtext">Jaipur, Rajasthan, India</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Message Mockup -->
+          <div class="contact-form-col reveal">
+            <div class="form-container">
+              <div class="form-header">
+                <h3>Send a Quick Message</h3>
+                <p>This is a local student demo form. Submit a note to test local interactivity!</p>
+              </div>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="senderName">Your Name</label>
+                  <input type="text" id="senderName" name="name" placeholder="e.g. Alex Sharma" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail">Your Email</label>
+                  <input type="email" id="senderEmail" name="email" placeholder="e.g. alex@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject">Subject</label>
+                  <input type="text" id="senderSubject" name="subject" placeholder="e.g. Hackathon Project / Peer Study" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Message</label>
+                  <textarea id="senderMessage" name="message" rows="4" placeholder="Write a brief message..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <span>Send Message</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Form Feedback Message Area -->
+              <div id="formFeedback" class="form-feedback hidden" role="status"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Download Portfolio Modal -->
+  <div class="modal-overlay" id="downloadModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">📄</span>
+          <h3>Portfolio Summary Download</h3>
+        </div>
+        <button class="modal-close" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <p class="modal-desc">
+          Choose how you would like to save or print Avni's first-year portfolio summary:
+        </p>
+
+        <div class="download-options">
+          <button class="download-opt-card" id="optDownloadTxt">
+            <div class="opt-icon">📝</div>
+            <div class="opt-details">
+              <h4>Download Summary File (.txt)</h4>
+              <p>A clean, formatted text profile summary containing academic info, skills, projects, and contact placeholders.</p>
+            </div>
+            <span class="opt-action">Download ↓</span>
+          </button>
+
+          <button class="download-opt-card" id="optPrintPdf">
+            <div class="opt-icon">🖨️</div>
+            <div class="opt-details">
+              <h4>Print or Save as PDF</h4>
+              <p>Opens your browser's print dialog with our custom print styling optimized for clean 1-2 page paper or PDF output.</p>
+            </div>
+            <span class="opt-action">Print ↗</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-ghost" id="modalDismissBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toastNotification" role="alert" aria-live="polite"></div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Avni Bindal</span>
+        </div>
+        <p class="footer-tagline">
+          First-Year B.Tech Computer Science Engineering Student<br>
+          JECRC University, Jaipur, Rajasthan
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <div class="footer-nav-grid">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <button class="btn btn-sm btn-ghost back-to-top" id="backToTopBtn" aria-label="Scroll back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+          <span>Back to Top</span>
+        </button>
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Avni Bindal. Built with HTML, CSS &amp; JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+================================================================================
+                      AVNI BINDAL - STUDENT PORTFOLIO SUMMARY
+               First-Year B.Tech Computer Science Engineering
+                 JECRC University, Jaipur, Rajasthan, India
+================================================================================
+
+1. CONTACT INFORMATION & PROFILES
+--------------------------------------------------------------------------------
+- Full Name:        Avni Bindal
+- Degree Program:   B.Tech in Computer Science & Engineering (CSE)
+- Institution:      JECRC University, Jaipur, Rajasthan, India
+- Email:            your.email@example.com (Editable Placeholder)
+- LinkedIn:         https://www.linkedin.com/in/avni-bindal-81b0b8428 (Verified Profile)
+- GitHub:           https://github.com/avni26bcon2120-ai (Verified Profile)
+- Campus Location:  JECRC University, Jaipur, Rajasthan, India
+- Academic Batch:   2024 - 2028
+
+
+2. ABOUT ME
+--------------------------------------------------------------------------------
+I am a first-year B.Tech Computer Science Engineering undergraduate student at
+JECRC University, Jaipur. I am enthusiastic about learning foundational computer
+science, developing algorithmic problem-solving skills in C, and exploring clean,
+aesthetic web technologies. I enjoy participating in peer hackathons and 
+combining structured logic with thoughtful design.
+
+
+3. EDUCATION & ACADEMIC PROFILE
+--------------------------------------------------------------------------------
+- Degree:           Bachelor of Technology (B.Tech)
+- Branch / Major:   Computer Science & Engineering (CSE)
+- University:       JECRC University, Jaipur, Rajasthan, India
+- Current Semester: Semester 1 (1st Year, Batch 2024 - 2028)
+- Department:       School of Engineering
+
+First-Year Coursework Highlights:
+- Problem Solving with C Programming (Syntax, Conditionals, Loops, Arrays, Functions)
+- Digital Literacy & Technical Documentation Showcase
+- Engineering Mathematics (Calculus, Linear Algebra, Discrete Basics)
+- Computing Laboratories & Terminal GCC Compilation Exercises
+
+
+4. SKILLS & TOOLKIT (Beginner & Foundational)
+--------------------------------------------------------------------------------
+* Programming Languages:
+  - C Programming (Variables, Loops, Conditions, Arrays, Functions, Basic I/O)
+  - Foundational Problem Solving & Flowchart Tracing
+
+* Web Development:
+  - HTML5 (Semantic Structure, Accessibility, Forms)
+  - CSS3 (Flexbox, CSS Grid, Responsive Design, Themes)
+  - JavaScript (Beginner - DOM Manipulation, Events)
+
+* Developer Tools:
+  - Visual Studio Code (VS Code)
+  - GCC Compiler & Command Line basics
+  - Git / GitHub (Introductory basics)
+
+* Professional & Interpersonal:
+  - Teamwork and Peer Collaboration
+  - Clear Communication and Technical Presentations
+  - Curiosity, Adaptability, and Eagerness to Learn
+
+
+5. STUDENT PROJECTS
+--------------------------------------------------------------------------------
+* Project 1: Personal Academic Portfolio (DL-Portfolio)
+  - Description: Designed and implemented a responsive, modern personal website
+    featuring a Pinterest-inspired aesthetic, light/dark mode switching, and
+    printable summary downloads using vanilla HTML5, CSS3, and JavaScript.
+  - Role: Designer & Developer (Solo Coursework Project)
+
+* Project 2: Real-Time Airfare Price Index (Student Hackathon Project)
+  - Description: Conceptualized and developed during a student hackathon. Explored
+    flight price trends and patterns to create an indicator index that assists
+    travelers in spotting budget-friendly flight booking intervals.
+  - Role: Hackathon Team Member (Ideation, Presentation & Dashboard Wireframing)
+
+* Project 3: C Data Structures Utility (Planned Semester Project)
+  - Description: Upcoming semester project focused on implementing console-based
+    record management and basic data structures in C.
+
+
+6. ACHIEVEMENTS & EXTRACURRICULAR MILESTONES
+--------------------------------------------------------------------------------
+- Hackathon Participation: Member of student hackathon team building the
+  Real-Time Airfare Price Index prototype.
+  [Editable: Update with exact hackathon name, e.g., TechFest 2024]
+- Academic Milestone: Successfully completed first-semester C programming lab
+  assignments and foundational coursework at JECRC University.
+- Course Presentation: Prepared and delivered the Digital Literacy course
+  portfolio presentation on modern digital skills.
+- Continuous Learning: Actively solving foundational programming exercises.
+
+
+================================================================================
+Note: This summary document is part of Avni Bindal's personal portfolio project.
+All placeholder fields can be updated as academic and personal milestones progress.
+================================================================================
